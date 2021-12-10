@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Operaciones básicas</title>
+</head>
+<body>
+<h1>Operaciones básicas</h1>
+<br>
+	valor 01:<input type="text" name="v1" id="v1"><br>
+	valor 02:<input type="text" name="v2" id="v2"><br>
+	resultado:<input type="text" name="res" id="res"><br>
+	<button onclick="SUMA()">sumar</button>
+	<script type="text/javascript">
+		
+		function SUMA(argument) {
+			let v1=document.getElementById('v1').value;
+			let v2=document.getElementById('v2').value;
+			let vv1=parseInt(v1,10);
+			let vv2=parseInt(v2,10);
+			let res=vv1+vv2;
+			document.getElementById('res').value=res;
+		}
+
+	</script>
+
+	<button onclick="RESTA()">restar</button>
+	<script type="text/javascript">
+		
+		function RESTA(argument) {
+			let v1=document.getElementById('v1').value;
+			let v2=document.getElementById('v2').value;
+			let vv1=parseInt(v1,10);
+			let vv2=parseInt(v2,10);
+			let res=vv1-vv2;
+			document.getElementById('res').value=res;
+		}
+
+	</script>
+
+		</script>
+
+	<button onclick="MULTI()">multiplicar</button>
+	<script type="text/javascript">
+		
+		function MULTI(argument) {
+			let v1=document.getElementById('v1').value;
+			let v2=document.getElementById('v2').value;
+			let vv1=parseInt(v1,10);
+			let vv2=parseInt(v2,10);
+			let res=vv1*vv2;
+			document.getElementById('res').value=res;
+		}
+
+	</script>
+
+			</script>
+
+	<button onclick="DIVI()">dividir</button>
+	<script type="text/javascript">
+		
+		function DIVI(argument) {
+			let v1=document.getElementById('v1').value;
+			let v2=document.getElementById('v2').value;
+			let vv1=parseInt(v1,10);
+			let vv2=parseInt(v2,10);
+			let res=vv1/vv2;
+			document.getElementById('res').value=res;
+		}
+
+	</script>
+</body>
+</html>
