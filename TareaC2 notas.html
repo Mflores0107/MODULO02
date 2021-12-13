@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h1>Evaluación alumnos</h1><br>
+Ingrese nota 1:<input type="text" id="n1" name="n1"><br>
+Ingrese nota 2:<input type="text" id="n2" name="n2"><br>
+Ingrese nota 3:<input type="text" id="n3" name="n3"><br>
+Ingrese nota 4:<input type="text" id="n4" name="n4"><br>
+
+<button onclick="evaluar();">Promedio</button><br>
+<p id="res"></p>
+
+<script type="text/javascript">
+
+	function evaluar() {
+        let n1=document.getElementById('n1').value;
+        let n2=document.getElementById('n2').value;
+        let n3=document.getElementById('n3').value;
+        let n4=document.getElementById('n4').value;
+        let nn1=parseInt(n1,10);
+        let nn2=parseInt(n2,10);
+        let nn3=parseInt(n3,10);
+        let nn4=parseInt(n4,10);
+        let promedio=(nn1+nn2+nn3+nn4)/4;
+        alert("promedio"+ promedio)
+        let res="";
+        if (((nn1+nn2+nn3+nn4)/4)>=4){
+        	res="APROBADO";
+        }else{
+            res="REPROBADO";	
+        }
+        document.getElementById('res').innerHTML=res;
+	}
+</script>
+
+</body>
+</html>
