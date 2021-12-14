@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>tarea asincronica</title>
+</head>
+<body>
+	   <h1>Porcentajes</h1>
+    <p>Valor: <input type="text" name="v1" id="v1"></p>
+    <p>Porcentaje: <input type="number" name="v2" min="1" max="100" id="v2"></p>
+    <p>Final: <input type="text" name="res" id="res"></p>
+ 
+    <button onclick="porcentaje();">Valor Porcentaje</button>
+    
+    <script type="text/javascript">
+
+        function porcentaje(){
+            let v1=document.getElementById('v1').value;
+            let v2=document.getElementById('v2').value;
+            let vv1=parseInt(v1,10);
+            let vv2=parseInt(v2,10);
+            const res=(vv1*vv2)/100
+            document.getElementById('res').value=res;
+        }
+    </script>
+</body>
+</html>
