@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>ejemplo iva</title>
+</head>
+<body>
+
+    <h1>Calcular IVA de un Producto</h1>
+
+            Precio: <input type="text" id="precio" name="precio">
+            <button onclick="calcular();">Calcular</button>
+                <p id="total"></p>
+
+<script type="text/javascript">
+
+    function calcular() {
+        const iva= 0.19;
+        let precio = document.getElementById('precio').value;
+        let valor = parseInt(precio,10);
+        let res =(valor*iva);
+        resultado= res + valor;
+       
+        document.getElementById('total').innerHTML = "Total+IVA="+resultado;
+    }
+
+</script>
+</body>
+</html>
